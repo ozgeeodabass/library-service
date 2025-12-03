@@ -1,7 +1,8 @@
 package microservice.library_service.dto
 
-data class BookIdDto @JvmOverloads constructor(val id: String? = "",
-    val isbn: String? = ""){
+data class BookIdDto(
+    val id: String,
+    val isbn: String){
     companion object{
         @JvmStatic
         fun convert(id:String, isbn:String): BookIdDto{
